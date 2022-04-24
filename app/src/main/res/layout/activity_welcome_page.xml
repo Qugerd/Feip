@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/welcomescreenimage"
+        android:layout_gravity="center"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        android:text="@string/welcome_text_one"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        android:text="@string/welcome_text_two"
+        android:layout_gravity="center"
+        android:textSize="16dp"
+        android:textColor="#808080" />
+
+    <Button
+        android:id="@+id/btn_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="62sp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+
+        android:text="@string/btn_registration"
+        android:textSize="16dp"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="14dp"
+
+
+        android:text="@string/welcome_text_three"
+        android:textSize="16dp"
+        android:textColor="#4B09F3"
+        android:textStyle="bold"/>
+
+</LinearLayout>
+
