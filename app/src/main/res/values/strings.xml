@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Fitness tracker</string>
+    <string name="button_name">Hello world</string>
+
+    <string name="welcome_text_one">Пожалуй, лучший фитнес трекер в ДВФУ</string>
+    <string name="welcome_text_two">Созданный студентами</string>
+    <string name="btn_registration">Зарегистрироваться</string>
+    <string name="welcome_text_three">Уже есть аккаунт?</string>
+
+    <string name="title_registration">Регистрация</string>
+    <string name="login">Логин</string>
+    <string name="name_nick">Имя или никнейм</string>
+    <string name="password">Пароль</string>
+    <string name="repeat_password">Повторите пароль</string>
+    <string name="sex">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="other">Другое</string>
+    <string name="agreement">Нажимая на кнопку, вы соглашаетесь  с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
+    <string name="title_login">Вход</string>
+    <string name="btn_login">Войти</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
