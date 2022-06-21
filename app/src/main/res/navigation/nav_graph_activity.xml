@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_nav_graph"
+    app:startDestination="@id/fragmentSwitcher">
+
+    <fragment
+        android:id="@+id/fragmentSwitcher"
+        android:name="com.example.fitnesstracker.FragmentSwitcher"
+        android:label="TabsFragment" >
+        <action
+            android:id="@+id/action_fragmentSwitcher_to_detailsMy"
+            app:destination="@id/detailsMy" />
+        <action
+            android:id="@+id/action_fragmentSwitcher_to_detailsUsers"
+            app:destination="@id/detailsUsers" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsMy"
+        android:name="com.example.fitnesstracker.Details.DetailsMy"
+        android:label="DetailsMy" />
+    <fragment
+        android:id="@+id/detailsUsers"
+        android:name="com.example.fitnesstracker.Details.DetailsUsers"
+        android:label="DetailsUsers" />
+    <fragment
+        android:id="@+id/profilePage"
+        android:name="com.example.fitnesstracker.ProfilePage"
+        android:label="ProfilePage" />
+</navigation>

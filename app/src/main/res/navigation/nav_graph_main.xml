@@ -11,11 +11,11 @@
         <action
             android:id="@+id/action_welcomePage_to_registrationPage"
             app:destination="@id/registrationPage"
-           />
+            />
         <action
             android:id="@+id/action_welcomePage_to_login"
             app:destination="@id/login"
-           />
+            />
     </fragment>
     <fragment
         android:id="@+id/registrationPage"
@@ -32,6 +32,14 @@
     </fragment>
     <fragment
         android:id="@+id/login"
-        android:name="com.example.fitnesstracker.Login"
-        android:label="Login" />
+        android:name="com.example.fitnesstracker.LoginPage"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_activityFragment"
+            app:destination="@id/activityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.fitnesstracker.ActivityFragment"
+        android:label="ActivityFragment" />
 </navigation>

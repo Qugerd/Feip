@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
-class WelcomePage: Fragment(R.layout.activity_welcome_page) {
+class WelcomePage: Fragment(R.layout.fragment_welcome_page) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.btn_registration).setOnClickListener {
