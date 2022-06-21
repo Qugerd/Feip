@@ -5,12 +5,12 @@
     <item
         android:id="@+id/deleteOption"
         app:showAsAction="ifRoom"
-        android:title="Удалить"
+        android:title="@string/delete"
         android:icon="@drawable/ic_delete"/>
 
     <item
         android:id="@+id/shareOption"
         app:showAsAction="ifRoom"
-        android:title="Поделиться"
+        android:title="@string/share"
         android:icon="@drawable/ic_share"/>
 </menu>

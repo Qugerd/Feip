@@ -3,11 +3,11 @@
 
     <item
         android:id="@+id/fragmentSwitcher"
-        android:title="Активность"
+        android:title="@string/activity"
         android:icon="@drawable/ic_sports"/>
 
     <item
         android:id="@+id/profilePage"
-        android:title="Профиль"
+        android:title="@string/profile"
         android:icon="@drawable/ic_person"/>
 </menu>
