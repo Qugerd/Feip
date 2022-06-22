@@ -1,5 +1,6 @@
 package com.example.fitnesstracker
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -8,8 +9,17 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 class WelcomePage: Fragment(R.layout.fragment_welcome_page) {
+
+    private val sharedPrefs by lazy {
+        requireContext().getSharedPreferences("Tokens", Context.MODE_PRIVATE)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        if(sharedPrefs.getString("Token", "") != "")
+            findNavController().navigate(R.id.action_welcomePage_to_activityFragment)
+
         view.findViewById<Button>(R.id.btn_registration).setOnClickListener {
             findNavController().navigate(R.id.action_welcomePage_to_registrationPage)
         }
