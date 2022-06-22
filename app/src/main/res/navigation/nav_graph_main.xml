@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomePage">
+
+    <fragment
+        android:id="@+id/welcomePage"
+        android:name="com.example.fitnesstracker.WelcomePage"
+        android:label="WelcomePage" >
+        <action
+            android:id="@+id/action_welcomePage_to_registrationPage"
+            app:destination="@id/registrationPage"
+            />
+        <action
+            android:id="@+id/action_welcomePage_to_login"
+            app:destination="@id/login"
+            />
+        <action
+            android:id="@+id/action_welcomePage_to_activityFragment"
+            app:destination="@id/activityFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/registrationPage"
+        android:name="com.example.fitnesstracker.RegistrationPage"
+        android:label="RegistrationPage" >
+        <action
+            android:id="@+id/action_registrationPage_to_activityFragment"
+            app:destination="@id/activityFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.fitnesstracker.PageLogin"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_activityFragment"
+            app:destination="@id/activityFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.fitnesstracker.ActivityFragment"
+        android:label="ActivityFragment" >
+        <action
+            android:id="@+id/action_activityFragment_to_welcomePage"
+            app:destination="@id/welcomePage" />
+    </fragment>
+</navigation>
