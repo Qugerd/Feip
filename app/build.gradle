@@ -46,4 +46,7 @@ dependencies {
     implementation "androidx.fragment:fragment-ktx:1.4.1"
     implementation "androidx.navigation:navigation-fragment-ktx:2.4.2"
     implementation "androidx.navigation:navigation-ui-ktx:2.4.2"
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'joda-time:joda-time:2.10.9'
 }

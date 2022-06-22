@@ -15,7 +15,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
-class RegistrationPage : Fragment(R.layout.activity_registration_page)  {
+class RegistrationPage : Fragment(R.layout.fragment_registration_page)  {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<Button>(R.id.btn_reg).setOnClickListener {
