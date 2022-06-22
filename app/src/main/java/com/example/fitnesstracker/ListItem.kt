@@ -9,5 +9,5 @@ sealed class ListItem(var id:Int){
                val time: String,
                val date: String
 
-               ): ListItem(id)
+    ): ListItem(id)
 }

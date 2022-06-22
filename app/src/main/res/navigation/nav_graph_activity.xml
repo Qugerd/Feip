@@ -25,6 +25,6 @@
         android:label="DetailsUsers" />
     <fragment
         android:id="@+id/profilePage"
-        android:name="com.example.fitnesstracker.ProfilePage"
+        android:name="com.example.fitnesstracker.PageProfile"
         android:label="ProfilePage" />
 </navigation>
